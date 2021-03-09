@@ -2,11 +2,11 @@
 
 FLIGHT_SEARCH_ENDPOINT = "https://tequila-api.kiwi.com"
 
-# tequila password
-# ivk2KN*BXCnjr8J
-
 class FlightSearch:
 
     def get_iata_code(self, city_name):
-        code = "TESTING"
-        return code
+        print("testing")
+
+
+    def check_flights(self, origin_city_code, destination_city_code, from_time, to_time):
+        print("testing")
