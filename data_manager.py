@@ -3,6 +3,7 @@ from pprint import pprint
 from dotenv import load_dotenv
 import os
 
+
 load_dotenv(".env")
 
 KIWI_ENDPOINT = "https://tequila-api.kiwi.com"
@@ -10,6 +11,7 @@ KIWI_QUERY = "locations/query"
 KIWI_SEARCH = "v2/search"
 SHEETY_ENDPOINT = "https://api.sheety.co/22b8a84df14a589aabfab6a9ff4d57da/cheapFlightsTracker/prices"
 API_KEY = os.getenv("API_KEY")
+
 
 class DataManager:
     def __init__(self):
@@ -50,6 +52,20 @@ class DataManager:
                 new_data = {
                     "price": {
                         "iataCode": location
+                    }
+                }
+                response = requests.put(
+                    url=f"{SHEETY_ENDPOINT}/{city['id']}",
+                    json=new_data
+                )
+                response.raise_for_status()
+
+    def update_prices(self, cheap_city, new_price_record):
+        for city in self.travel_data:
+            if cheap_city == city['city']:
+                new_data = {
+                    "price": {
+                        "recordCheapest": new_price_record
                     }
                 }
                 response = requests.put(
