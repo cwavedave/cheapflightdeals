@@ -1,10 +1,12 @@
 # cheapflightdeals
 API's to get the best flight deals and let users know when they are available via SMTP 
 
-project using sheetly <br>
-  <br>
+Project API's 
+
+<strong>sheetly <br></strong>
+https://sheety.co/  <br>
   
-Kiwi <br>
+<strong>Kiwi </strong><br>
 https://tequila.kiwi.com/<br>
 
 <br>
