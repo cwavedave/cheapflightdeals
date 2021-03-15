@@ -3,7 +3,9 @@ API's to get the best flight deals and let users know when they are available vi
 
 Project API's 
 
-<strong>sheetly <br></strong>
+<hr>
+
+<strong>Sheety <br></strong>
 https://sheety.co/  <br>
   
 <strong>Kiwi </strong><br>
