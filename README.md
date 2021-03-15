@@ -1,5 +1,5 @@
 # cheapflightdeals
-API's to get the best flight deals and let users know when they are available
+API's to get the best flight deals and let users know when they are available via SMTP 
 
 project using sheetly <br>
   <br>
@@ -7,5 +7,4 @@ project using sheetly <br>
 Kiwi <br>
 https://tequila.kiwi.com/<br>
 
-Twilio <br>
-https://www.twilio.com/docs/sms <br> 
+<br>
