@@ -3,8 +3,6 @@ API's to get the best flight deals and let users know when they are available vi
 
 <h2>Project API's</h2>
 
-<hr>
-
 <strong>Sheety <br></strong>
 https://sheety.co/  <br>
   
